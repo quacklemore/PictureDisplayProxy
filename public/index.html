@@ -5,13 +5,18 @@
     <title>Trip AdCoba</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="http://localhost:4003/style.css">
+    <link rel="stylesheet" href="/style.css">
   </head>
 
   <body>
-    <div id="booking-app"></div>
-    <div id="pictureDisplayApp"></div>
-    <div id="aboutApp"></div>
-    <div id="ReviewApp"></div>
+    <div id="proxyFlexContainer">
+      <div id="proxyTopRow">
+        <div class='TripCobaComponents' id="booking-app"></div>
+        <div class='TripCobaComponents' id="pictureDisplayApp"></div>
+      </div>
+      <div class='TripCobaComponents' id="aboutApp"></div>
+      <div class='TripCobaComponents' id="ReviewApp"></div>
+    </div>
 
     <script src="http://localhost:4000/bundle.js"></script>
     <script src="http://localhost:4001/bundle.js"></script>

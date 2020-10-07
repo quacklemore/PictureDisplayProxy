@@ -1,0 +1,27 @@
+/* * {
+  box-sizing: border-box;
+} */
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+#booking-app, #pictureDisplayApp, #aboutApp, #ReviewApp {
+  z-index: 1;
+}
+
+#proxyFlexContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+#proxyTopRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.TripCobaComponents {
+  margin: 10px;
+}
