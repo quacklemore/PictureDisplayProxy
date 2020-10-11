@@ -6,7 +6,6 @@ const axios = require('axios');
 
 const app = express();
 const port = 4004;
-const host = 'localhost';
 
 
 app.use(express.static(__dirname + '/public/'));
