@@ -14,7 +14,11 @@ app.use(express.static(__dirname + '/public/'));
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
-app.get('/reviews', createProxyMiddleware({
+app.get('/api/hotel/:hotelId', createProxyMiddleware({
+  target: 'http://localhost:4001'
+}));
+
+app.get('/hotel/:hotel', createProxyMiddleware({
   target: 'http://localhost:4003'
 }));
 
@@ -34,9 +38,6 @@ app.post('/api/trips/', createProxyMiddleware({
   target: 'http://localhost:4003'
 }));
 
-app.get('/api/hotel/:hotelId', createProxyMiddleware({
-  target: 'http://localhost:4001'
-}));
 
 app.listen(port, function() {
   console.log(`listening on port: ${port}`);

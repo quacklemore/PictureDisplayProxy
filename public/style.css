@@ -5,23 +5,42 @@
 body, html {
   width: 100%;
   height: 100%;
+  background-color: #F2F2F2;
 }
 
-#booking-app, #pictureDisplayApp, #aboutApp, #ReviewApp {
-  z-index: 1;
+#header {
+  height: 55px;
+  width: 100%;
+  background-color: #FFFFFF;
+  border-bottom: 3px solid #E1E1E1;
+}
+
+#headerLeft {
+  float: left;
+}
+
+#headerRight {
+  float: right;
 }
 
 #proxyFlexContainer {
+  clear: both;
   display: flex;
   flex-direction: column;
-  margin: 30px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
-#proxyTopRow {
+#proxyTopRow, #proxyAboutRow {
   display: flex;
   flex-direction: row;
+  margin: 5px;
 }
 
 .TripCobaComponents {
   margin: 10px;
+}
+
+#cancunAd, #covidStatement {
+  border: 2px solid #D3D3D3;
 }

@@ -2,26 +2,36 @@
 <html>
 
   <head>
-    <title>Trip AdCoba</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="http://localhost:4003/style.css">
+    <link rel="icon" id="favicon" href="https://static.tacdn.com/favicon.ico?v2" type="image/x-icon">
+    <link rel="mask-icon" sizes="any" href="https://static.tacdn.com/img2/brand_refresh/application_icons/mask-icon.svg" color="#000000">
     <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <title>Trip AdCoba</title>
   </head>
 
   <body>
+    <header id="header">
+      <img src="/images/nav_bar_left.png" id="headerLeft" width="535px" height="55px">
+      <img src="/images/nav_bar_right.png" id="headerRight" width="352px" height="55px">
+    </header>
     <div id="proxyFlexContainer">
       <div id="proxyTopRow">
         <div class='TripCobaComponents' id="booking-app"></div>
         <div class='TripCobaComponents' id="pictureDisplayApp"></div>
       </div>
-      <div class='TripCobaComponents' id="aboutApp"></div>
+      <img src="/images/covid.png" id="covidStatement" width="811px" height="463px" >
+      <div id="proxyAboutRow">
+        <div class='TripCobaComponents' id="aboutApp"></div>
+        <img src="/images/cancunad.png" id="cancunAd" width="301px" height="579px">
+      </div>
       <div class='TripCobaComponents' id="ReviewApp"></div>
     </div>
 
-    <script src="http://localhost:4000/bundle.js"></script>
-    <script src="http://localhost:4001/bundle.js"></script>
-    <script src="http://localhost:4002/app.js"></script>
-    <script src="http://localhost:4003/bundle.js"></script>
+    <script type="text/javascript" src="http://localhost:4003/bundle.js"></script>
+    <script type="text/javascript" src="http://localhost:4002/app.js"></script>
+    <script type="text/javascript" src="http://localhost:4001/bundle.js"></script>
+    <script type="text/javascript" src="http://localhost:4000/bundle.js"></script>
 
 
   </body>
